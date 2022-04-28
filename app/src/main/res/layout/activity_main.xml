@@ -12,7 +12,6 @@
         android:layout_width="150dp"
         android:layout_height="120dp"
         android:layout_margin="32dp"
-        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars"
@@ -23,7 +22,6 @@
         android:layout_width="150dp"
         android:layout_height="120dp"
         android:layout_margin="32dp"
-        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars"
@@ -34,7 +32,6 @@
         android:layout_width="150dp"
         android:layout_height="120dp"
         android:layout_margin="32dp"
-        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@id/image1"
         app:layout_constraintTop_toBottomOf="@id/desc1"
         app:layout_constraintEnd_toEndOf="@id/image1"
@@ -45,10 +42,31 @@
         android:layout_width="150dp"
         android:layout_height="120dp"
         android:layout_margin="32dp"
-        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@id/image2"
         app:layout_constraintTop_toBottomOf="@id/desc2"
         app:layout_constraintEnd_toEndOf="@id/image2"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_margin="32dp"
+        app:layout_constraintStart_toStartOf="@id/image3"
+        app:layout_constraintTop_toBottomOf="@id/desc3"
+        app:layout_constraintEnd_toEndOf="@id/image3"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/image6"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_margin="32dp"
+        app:layout_constraintStart_toStartOf="@id/image4"
+        app:layout_constraintTop_toBottomOf="@id/desc4"
+        app:layout_constraintEnd_toEndOf="@id/image4"
         tools:srcCompat="@tools:sample/avatars"
         tools:ignore="MissingConstraints" />
 
@@ -104,15 +122,42 @@
         android:textSize="16sp"
         android:textStyle="bold"/>
 
+    <TextView
+        android:id="@+id/desc5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/image5"
+        app:layout_constraintTop_toBottomOf="@id/image5"
+        app:layout_constraintEnd_toEndOf="@id/image5"
+        android:layout_marginTop="8sp"
+        android:text="Cheesecake de Chocolate"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/desc6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/image6"
+        app:layout_constraintTop_toBottomOf="@id/image6"
+        app:layout_constraintEnd_toEndOf="@id/image6"
+        android:layout_marginTop="8sp"
+        android:text="Torta de Morango"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
     <Button
         android:id="@+id/add_item"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="+ Adicionar Item"
-        android:textColor="@color/white"/>
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"/>
 
 sp</androidx.constraintlayout.widget.ConstraintLayout>
