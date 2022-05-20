@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.ImageView
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         val listaProdutos: MutableList<Produto> = mutableListOf()
         val adapterProduto = AdapterProduto(this, listaProdutos)
         recyclerView_produtos.adapter = adapterProduto
+        recyclerView_produtos.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
 
         val produto1 = Produto(
             R.drawable.pao,
@@ -37,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         val produto2 = Produto(
             R.drawable.bolo_chocolate,
             nome = "Bolo de Chocolate",
-            descricao = "Bolo de chocolate confeitado, com chocolate derretido.",
+            descricao = "Bolo de chocolate confeitado, com chocolate derretido."
            //preco = "R$ 32,00"
         )
         listaProdutos.add(produto2)
